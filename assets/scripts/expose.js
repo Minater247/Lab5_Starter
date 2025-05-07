@@ -47,4 +47,29 @@ function init() {
     }
     audio.play();
   });
+
+
+  // May have already-loaded context
+  if (slider.value < 1) {
+    icon.src = 'assets/icons/volume-level-0.svg';
+    icon.alt = 'Volume Level 0';
+  } else if (slider.value < 33) {
+    icon.src = 'assets/icons/volume-level-1.svg';
+    icon.alt = 'Volume Level 1';
+  } else if (slider.value < 67) {
+    icon.src = 'assets/icons/volume-level-2.svg';
+    icon.alt = 'Volume Level 2';
+  } else {
+    icon.src = 'assets/icons/volume-level-3.svg';
+    icon.alt = 'Volume Level 3';
+  }
+
+  audio.volume = slider.value / 100;
+
+  if (hornSelect.value !== "select") {
+    hornImage.src = 'assets/images/' + hornSelect.value + '.svg';
+    hornImage.alt = hornSelect.value;
+  }
+
+  audio.src = 'assets/audio/' + hornSelect.value + '.mp3';
 }
