@@ -1,5 +1,5 @@
 # Lab 5 - Starter
-Make sure you make a PR to your own repo's main and not the class' repo!! Otherwise you will lose points!!
+View the hosted [Github Page here!](https://minater247.github.io/Lab5_Starter/expose.html)
 
 ## Logistics
 **Lab Writer**: Nathan Reed
